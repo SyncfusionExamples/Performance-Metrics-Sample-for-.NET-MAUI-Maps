@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ShapeLayerPerformanceSample.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
