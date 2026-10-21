@@ -68,8 +68,8 @@
 
 	<ItemGroup>
 	  <EmbeddedResource Include="ShapeFiles\countries.geo.json" />
-	  <EmbeddedResource Include="ShapeFiles\world1.dbf" />
-	  <EmbeddedResource Include="ShapeFiles\world1.shp" />
+	  <EmbeddedResource Include="ShapeFiles\world.dbf" />
+	  <EmbeddedResource Include="ShapeFiles\world.shp" />
 	</ItemGroup>
 
 	<ItemGroup>

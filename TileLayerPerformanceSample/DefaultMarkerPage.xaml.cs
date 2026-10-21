@@ -15,7 +15,6 @@ public partial class DefaultMarkerPage : ContentPage
 
     private void LoadDefaultMarkersButton_Clicked(object? sender, EventArgs e)
     {
-
         defaultMarkerStopwatch.Start();
         MapMarkerCollection markers = CreateDefaultMarkers();
         titleLayer.Markers = markers;

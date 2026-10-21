@@ -5,7 +5,6 @@ namespace ShapeLayerPerformanceSample;
 
 public partial class DefaultMarkerPage : ContentPage
 {
-
     private readonly Stopwatch defaultMarkerStopwatch = new();
 
     public DefaultMarkerPage()
@@ -15,7 +14,6 @@ public partial class DefaultMarkerPage : ContentPage
 
     private void LoadDefaultMarkersButton_Clicked(object? sender, EventArgs e)
     {
-
         defaultMarkerStopwatch.Restart();
         MapMarkerCollection markers = CreateDefaultMarkers();
         shapeLayer.Markers = markers;

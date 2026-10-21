@@ -18,6 +18,5 @@
                 <maps:MapTileLayer x:Name="titleLayer"/>
             </maps:SfMaps.Layer>
         </maps:SfMaps>
-
     </Grid>
 </ContentPage>

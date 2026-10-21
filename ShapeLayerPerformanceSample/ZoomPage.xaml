@@ -22,7 +22,5 @@
                 </maps:MapShapeLayer>
             </maps:SfMaps.Layer>
         </maps:SfMaps>
-
     </Grid>
-
 </ContentPage>
