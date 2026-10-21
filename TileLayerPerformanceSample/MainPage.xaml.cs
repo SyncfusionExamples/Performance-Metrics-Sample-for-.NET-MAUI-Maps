@@ -17,7 +17,6 @@ namespace TileLayerPerformanceSample
             stopwatch.Start();
             mapTitleLayer.UrlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
             stopwatch.Stop();
-
             InitialRenderTimeLabel.Text = $"Title Layer Render Time: " + $"{stopwatch.Elapsed.TotalMilliseconds:F0} ms";
         }
     }

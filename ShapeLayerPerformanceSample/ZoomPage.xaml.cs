@@ -15,12 +15,9 @@ public partial class ZoomPage : ContentPage
     private async void RunZoomButton_Clicked(object? sender, EventArgs e)
     {
         stopwatch.Start();
-
         zoomPanBehavior.EnableZooming = true;
         zoomPanBehavior.ZoomLevel = 5;
-
         stopwatch.Stop();
         ZoomTimeLabel.Text = $"Zoom Render Time: " + $"{stopwatch.Elapsed.TotalMilliseconds:F0} ms";
     }
 }
-

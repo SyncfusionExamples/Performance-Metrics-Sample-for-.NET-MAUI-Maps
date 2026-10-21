@@ -10,9 +10,7 @@ public sealed class CountryLocation
     }
 
     public string CountryName { get; }
-
     public double Latitude { get; }
-
     public double Longitude { get; }
 }
 
@@ -30,7 +28,6 @@ public static class CountryLocationData
     new("China", 35.8617, 104.1954),
     new("Japan", 36.2048, 138.2529),
     new("Australia", -25.2744, 133.7751),
-
     new("Italy", 41.8719, 12.5674),
     new("Spain", 40.4637, -3.7492),
     new("Portugal", 39.3999, -8.2245),
@@ -41,7 +38,6 @@ public static class CountryLocationData
     new("Poland", 51.9194, 19.1451),
     new("Netherlands", 52.1326, 5.2913),
     new("Belgium", 50.5039, 4.4699),
-
     new("Switzerland", 46.8182, 8.2275),
     new("Austria", 47.5162, 14.5501),
     new("Ireland", 53.1424, -7.6921),
@@ -52,7 +48,6 @@ public static class CountryLocationData
     new("Romania", 45.9432, 24.9668),
     new("Hungary", 47.1625, 19.5033),
     new("Czech Republic", 49.8175, 15.4730),
-
     new("South Korea", 35.9078, 127.7669),
     new("Indonesia", -0.7893, 113.9213),
     new("Malaysia", 4.2105, 101.9758),
@@ -63,7 +58,6 @@ public static class CountryLocationData
     new("Pakistan", 30.3753, 69.3451),
     new("Bangladesh", 23.6850, 90.3563),
     new("Sri Lanka", 7.8731, 80.7718),
-
     new("Nepal", 28.3949, 84.1240),
     new("Myanmar", 21.9162, 95.9560),
     new("Mongolia", 46.8625, 103.8467),
@@ -74,7 +68,6 @@ public static class CountryLocationData
     new("United Arab Emirates", 23.4241, 53.8478),
     new("Israel", 31.0461, 34.8516),
     new("Jordan", 30.5852, 36.2384),
-
     new("Egypt", 26.8206, 30.8025),
     new("South Africa", -30.5595, 22.9375),
     new("Nigeria", 9.0820, 8.6753),
@@ -85,7 +78,6 @@ public static class CountryLocationData
     new("Tunisia", 33.8869, 9.5375),
     new("Ghana", 7.9465, -1.0232),
     new("Tanzania", -6.3690, 34.8888),
-
     new("Uganda", 1.3733, 32.2903),
     new("Zimbabwe", -19.0154, 29.1549),
     new("Zambia", -13.1339, 27.8493),
@@ -96,7 +88,6 @@ public static class CountryLocationData
     new("Sudan", 12.8628, 30.2176),
     new("Senegal", 14.4974, -14.4524),
     new("Botswana", -22.3285, 24.6849),
-
     new("Mexico", 23.6345, -102.5528),
     new("Argentina", -38.4161, -63.6167),
     new("Chile", -35.6751, -71.5430),
@@ -107,7 +98,6 @@ public static class CountryLocationData
     new("Bolivia", -16.2902, -63.5887),
     new("Paraguay", -23.4425, -58.4438),
     new("Uruguay", -32.5228, -55.7658),
-
     new("Cuba", 21.5218, -77.7812),
     new("Jamaica", 18.1096, -77.2975),
     new("Panama", 8.5380, -80.7821),
@@ -118,7 +108,6 @@ public static class CountryLocationData
     new("Nicaragua", 12.8654, -85.2072),
     new("Belize", 17.1899, -88.4976),
     new("Dominican Republic", 18.7357, -70.1627),
-
     new("New Zealand", -40.9006, 174.8860),
     new("Papua New Guinea", -6.3150, 143.9555),
     new("Fiji", -17.7134, 178.0650),

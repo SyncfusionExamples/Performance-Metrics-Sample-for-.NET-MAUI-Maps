@@ -10,7 +10,6 @@ public partial class CustomMarkerPage : ContentPage
     public CustomMarkerPage()
     {
         InitializeComponent();
-
         titleLayer.UrlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
     }
 
@@ -18,13 +17,9 @@ public partial class CustomMarkerPage : ContentPage
     {
         customMarkerStopwatch.Start();
         MapMarkerCollection markers = CreateCustomMarkers();
-
         titleLayer.Markers = markers;
-
         customMarkerStopwatch.Stop();
-
         CustomMarkerCountLabel.Text = $"Custom Marker Count: {markers.Count}";
-
         CustomMarkerTimeLabel.Text = $"Custom Marker Render Time: " + $"{customMarkerStopwatch.Elapsed.TotalMilliseconds:F0} ms";
     }
 
@@ -39,12 +34,8 @@ public partial class CustomMarkerPage : ContentPage
                 {
                     Latitude = country.Latitude,
                     Longitude = country.Longitude,
-
-                    HorizontalAlignment =
-                        MapAlignment.Center,
-
-                    VerticalAlignment =
-                        MapAlignment.Start
+                    HorizontalAlignment = MapAlignment.Center,
+                    VerticalAlignment = MapAlignment.Start
                 });
         }
 

@@ -27,7 +27,6 @@
                 <maps:MapTileLayer x:Name="titleLayer" MarkerTemplate="{StaticResource CustomMarkerTemplate}" />
             </maps:SfMaps.Layer>
         </maps:SfMaps>
-
     </Grid>
 
 </ContentPage>

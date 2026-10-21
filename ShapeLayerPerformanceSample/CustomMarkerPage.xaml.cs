@@ -11,23 +11,16 @@ public partial class CustomMarkerPage : ContentPage
     public CustomMarkerPage()
     {
         InitializeComponent();
-
-     
     }
 
     private void LoadCustomMarkersButton_Clicked(object? sender, EventArgs e)
     {
 
         customMarkerStopwatch.Start();
-
         MapMarkerCollection markers = CreateCustomMarkers();
-
         shapeLayer.Markers = markers;
-
         customMarkerStopwatch.Stop();
-
         CustomMarkerCountLabel.Text = $"Custom Marker Count: {markers.Count}";
-
         CustomMarkerTimeLabel.Text = $"Custom Marker Load Time: " +  $"{customMarkerStopwatch.Elapsed.TotalMilliseconds:F0} ms";
     }
 
@@ -42,12 +35,8 @@ public partial class CustomMarkerPage : ContentPage
                 {
                     Latitude = country.Latitude,
                     Longitude = country.Longitude,
-
-                    HorizontalAlignment =
-                        MapAlignment.Center,
-
-                    VerticalAlignment =
-                        MapAlignment.Start
+                    HorizontalAlignment = MapAlignment.Center,
+                    VerticalAlignment = MapAlignment.Start
                 });
         }
 

@@ -17,16 +17,10 @@ public partial class DefaultMarkerPage : ContentPage
     {
 
         defaultMarkerStopwatch.Restart();
-
-        MapMarkerCollection markers =
-            CreateDefaultMarkers();
-
+        MapMarkerCollection markers = CreateDefaultMarkers();
         shapeLayer.Markers = markers;
-
         defaultMarkerStopwatch.Stop();
-
         DefaultMarkerCountLabel.Text = $"Default Marker Count: {markers.Count}";
-
         DefaultMarkerTimeLabel.Text = $"Default Marker Render Time: " +  $"{defaultMarkerStopwatch.Elapsed.TotalMilliseconds:F0} ms";
     }
 
@@ -46,5 +40,4 @@ public partial class DefaultMarkerPage : ContentPage
 
         return markers;
     }
-
 }

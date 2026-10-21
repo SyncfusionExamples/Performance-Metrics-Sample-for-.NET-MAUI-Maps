@@ -10,7 +10,6 @@ public partial class DefaultMarkerPage : ContentPage
     public DefaultMarkerPage()
     {
         InitializeComponent();
-
         titleLayer.UrlTemplate = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
     }
 
@@ -18,22 +17,16 @@ public partial class DefaultMarkerPage : ContentPage
     {
 
         defaultMarkerStopwatch.Start();
-
         MapMarkerCollection markers = CreateDefaultMarkers();
-
         titleLayer.Markers = markers;
-
         defaultMarkerStopwatch.Stop();
-
         DefaultMarkerCountLabel.Text = $"Default Marker Count: {markers.Count}";
-
         DefaultMarkerTimeLabel.Text = $"Default Marker Render Time: " + $"{defaultMarkerStopwatch.Elapsed.TotalMilliseconds:F0} ms";
     }
 
     private static MapMarkerCollection CreateDefaultMarkers()
     {
         MapMarkerCollection markers = new();
-
         foreach (CountryLocation country in CountryLocationData.Countries)
         {
             markers.Add(
@@ -46,5 +39,4 @@ public partial class DefaultMarkerPage : ContentPage
 
         return markers;
     }
-
 }
