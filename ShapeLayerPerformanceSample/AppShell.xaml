@@ -6,7 +6,7 @@
     Title="ShapeLayerPerformanceSample">
 
     <ShellContent
-        Title="Home"
+        Title="Output"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
