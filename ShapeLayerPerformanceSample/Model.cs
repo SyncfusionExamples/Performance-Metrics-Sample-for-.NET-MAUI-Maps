@@ -1,4 +1,6 @@
-﻿namespace ShapeLayerPerformanceSample;
+﻿using Syncfusion.Maui.Maps;
+
+namespace ShapeLayerPerformanceSample;
 
 public sealed class CountryLocation
 {
@@ -12,6 +14,11 @@ public sealed class CountryLocation
     public string CountryName { get; }
     public double Latitude { get; }
     public double Longitude { get; }
+}
+
+public class CustomMarker : MapMarker
+{
+    public string Name { get; set; } = string.Empty;
 }
 
 public static class CountryLocationData

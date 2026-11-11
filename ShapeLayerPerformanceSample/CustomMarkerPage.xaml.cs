@@ -30,14 +30,14 @@ public partial class CustomMarkerPage : ContentPage
 
         foreach (CountryLocation country in CountryLocationData.Countries)
         {
-            markers.Add(
-                new MapMarker
-                {
-                    Latitude = country.Latitude,
-                    Longitude = country.Longitude,
-                    HorizontalAlignment = MapAlignment.Center,
-                    VerticalAlignment = MapAlignment.Start
-                });
+            markers.Add(new CustomMarker
+            {
+                Name = country.CountryName,
+                Latitude = country.Latitude,
+                Longitude = country.Longitude,
+                HorizontalAlignment = MapAlignment.Center,
+                VerticalAlignment = MapAlignment.Start
+            });
         }
 
         return markers;
